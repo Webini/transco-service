@@ -1,0 +1,12 @@
+{
+    "maxInstances": 4,
+    "encoders": {
+        "h264": "libx264",
+        "aac": "aac",
+        "mov_text": "mov_text",
+        "webvtt": "webvtt"
+    },
+    "codecBlacklist": [
+        "dvd_subtitle", "dvb_subtitle", "hdmv_pgs_subtitle"
+    ]
+}

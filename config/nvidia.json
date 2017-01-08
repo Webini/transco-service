@@ -1,0 +1,31 @@
+{
+    "maxInstances": 2,
+    "filters": {
+        "scale": "scale_npp"
+    },
+    "encoders": { 
+        "h264": "h264_nvenc", 
+        "hevc": "hevc_nvenc",
+        "aac": "aac",
+        "mov_text": "mov_text",
+        "webvtt": "webvtt"
+    },
+    "decoders": {
+        "video": {
+            "h263": "h263_cuvid",
+            "h264": "h264_cuvid",
+            "hevc": "hevc_cuvid",
+            "mjpeg": "mjpeg_cuvid",
+            "mpeg1video": "mpeg1_cuvid",
+            "mpeg2video": "mpeg2_cuvid",
+            "mpeg4": "mpeg4_cuvid",
+            "vc1": "vc1_cuvid",
+            "vp8": "vp8_cuvid",
+            "vp9": "vp9_cuvid"
+        }
+    },
+    "hwDecoder": "cuvid",
+    "codecBlacklist": [
+        "dvd_subtitle", "dvb_subtitle", "hdmv_pgs_subtitle"
+    ]
+}
